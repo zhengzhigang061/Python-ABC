@@ -124,16 +124,16 @@ import numpy as np
 
         2、使用NumPy中函数创建ndarray数组，如：arange，ones，zeros等。
                 函数							                说明
-            np.arange(n)				    	类似range()函数，返回ndarray类型，元素从0到n-1
-            np.ones(shape)				        根据shape生成一个全1数组，shape是元组类型
-            np.zeros(shape)				        根据shape生成一个全0数组，shape是元组类型
-            np.full(shape, val)				    根据shape生成一个数组，每个元素值都是val
-            np.eye(n)				    	    创建一个正方形的n*n单位矩阵，对角线为1，其余为0
-            np.ones_like(a)				        根据数组a的形状生成一个全1数组
-            np.zeros_like(a)			    	根据数组a的形状生成一个全0数组
-            np.full_like(a, val)	 	        根据数组a的形状生成一个数组，每个元素值都是val
-            np.linspace()				    	根据起止数据等间距地填充数据，形成数组
-            np.concatenate()			    	将两个或多个数组合并成一个新的数组
+            np.arange(n)                        类似range()函数，返回ndarray类型，元素从0到n-1
+            np.ones(shape)                      根据shape生成一个全1数组，shape是元组类型
+            np.zeros(shape)                     根据shape生成一个全0数组，shape是元组类型
+            np.full(shape, val)                 根据shape生成一个数组，每个元素值都是val
+            np.eye(n)                           创建一个正方形的n*n单位矩阵，对角线为1，其余为0
+            np.ones_like(a)                     根据数组a的形状生成一个全1数组
+            np.zeros_like(a)                    根据数组a的形状生成一个全0数组
+            np.full_like(a, val)                根据数组a的形状生成一个数组，每个元素值都是val
+            np.linspace()                       根据起止数据等间距地填充数据，形成数组
+            np.concatenate()                    将两个或多个数组合并成一个新的数组
 
             In [47]: np.arange(10)
             Out[47]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -197,10 +197,10 @@ import numpy as np
     1、对于创建后的ndarray数组，可以对其进行维度变换和元素类型变换
 
             方法						                说明
-        .reshape(shape)		     	不改变数组元素，返回一个shape形状的数组，原数组不变
-        .resize(shape)			    与.reshape()功能一致，但修改原数组
-        .swapaxes(ax1, ax2)	        将数组n个维度中两个维度进行调换
-        .flatten()				    将数组进行降维，返回折叠后的一维数组，原数组不变
+        .reshape(shape)             不改变数组元素，返回一个shape形状的数组，原数组不变
+        .resize(shape)              与.reshape()功能一致，但修改原数组
+        .swapaxes(ax1, ax2)         将数组n个维度中两个维度进行调换
+        .flatten()                  将数组进行降维，返回折叠后的一维数组，原数组不变
 
         In [71]: a = np.ones((2, 3, 4), dtype = np.int32)
 
